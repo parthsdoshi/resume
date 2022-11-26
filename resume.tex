@@ -1,0 +1,264 @@
+%-------------------------
+% Resume in Latex
+% Author : Parth Doshi
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\setlength{\footskip}{4.08003pt}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+    \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+    \item\small{
+            {#1 \vspace{-2pt}}
+    }
+}
+
+\newcommand{\resumeSubheading}[4]{
+    \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+        \textbf{#1}       & #2                 \\
+        \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+        \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+        \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+% \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+%   \textbf{\href{http://sourabhbajaj.com/}{\Large Sourabh Bajaj}} & Email : \href{mailto:sourabh@sourabhbajaj.com}{sourabh@sourabhbajaj.com}\\
+%   \href{http://sourabhbajaj.com/}{http://www.sourabhbajaj.com} & Mobile : +1-123-456-7890 \\
+% \end{tabular*}
+
+\begin{center}
+    \textbf{\Huge Parth Doshi} \break
+    \href{mailto:contact@parthdoshi.com}{\faIcon[regular]{paper-plane} \underline{contact@parthdoshi.com}} $|$
+    \href{https://linkedin.com/in/parthsdoshi}{\faIcon{linkedin} \underline{linkedin.com/in/parthsdoshi}} $|$
+    \href{https://github.com/parthsdoshi}{\faIcon{github} \underline{github.com/parthsdoshi}} $|$
+    \href{https://parthdoshi.com}{\faIcon{link} \underline{parthdoshi.com}}
+\end{center}
+
+
+%-----------EDUCATION-----------
+\section{Education}
+\resumeSubHeadingListStart
+\resumeSubheading
+{Purdue}{West Lafayette, IN}
+{B.S. Computer Science: Machine Intelligence, B.S. Mathematical Statistics}{Aug. 2016 -- Dec 2019}
+\resumeSubHeadingListEnd
+
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+\resumeSubHeadingListStart
+
+\resumeSubheading
+{Fathom Health}{Remote/NYC}
+{Software Engineering Team Lead}{Jan. 2020 -- Present}
+
+\resumeItemListStart
+\resumeItem{Designed and created complex ETL (extract, load, and transform) and reverse-ETL pipelines with hospitals and HIPAA data.}
+\resumeItem{Led training and deployment of medical coding NLP models for multiple hospital conglomerations (\href{https://revcycleintelligence.com/features/medical-coding-is-the-next-stop-for-artificial-intelligence-in-healthcare}{\underline{ex. TEC Health}}).}
+\resumeItem{Explored historical records and used domain knowledge to programatically infer new labels to help the model generalize to future guidelines or requirements changes.}
+\resumeItem{Transformed $\ge$10M healthcare records, 1TB of unstructured data, and aligned them to the individual guidelines of more than 100 individual hospitals across the country.}
+\resumeItemListEnd
+
+% \resumeSubSubheading{Software Engineer}{}
+% \resumeItemListStart
+% \resumeItem{Implemented multiple post-model data transforms to tailor model predictions for specific customers and/or features.}
+% \resumeItem{Achieved a 10x model-train speedup by helping move model training to TPUs from GPUs allowing Fathom to feasibly train larger models and gain accuracy.}
+% \resumeItemListEnd
+
+% -----------Multiple Positions Heading-----------
+%    \resumeSubSubheading
+%     {Software Engineer I}{Oct 2014 - Sep 2016}
+%     \resumeItemListStart
+%        \resumeItem{Apache Beam}
+%          {Apache Beam is a unified model for defining both batch and streaming data-parallel processing pipelines}
+%     \resumeItemListEnd
+%    \resumeSubHeadingListEnd
+%-------------------------------------------
+
+\resumeSubheading
+{Microsoft}{Redmond, WA}
+{Software Engineering Intern}{May 2019 -- Aug. 2019}
+
+\resumeItemListStart
+\resumeItem{Automated provisioning and deprovisioning of roles to provide just-in-time (JIT) access of production Azure resources based on an inputted on-call schedule.}
+\resumeItem{Reduced each team's surface of attack by as much as 70\% by restricting the roles based on the duties required for each on-call role.}
+\resumeItemListEnd
+
+\resumeSubheading
+{Viptela}{San Jose, CA}
+{Software Engineering Intern}{Jun. 2018 -- Aug 2018}
+\resumeItemListStart
+\resumeItem{Predicted complex cross-platform network topologies by evaluating and applying multiple ML models. (random forest classification, logistic regression, and SVMs)}
+\resumeItem{Managed and built an application that deployed the predicted network onto AWS and hypervisor platforms (ESXi and KVM).}
+\resumeItemListEnd
+
+\resumeSubheading
+{Cisco Systems}{San Jose, CA}
+{Software Engineering Intern}{Jun. 2017 -- Aug 2017}
+\resumeItemListStart
+\resumeItem{Created queryable multi-variable network heatmaps with subsecond performance over 300 million values of real-time temporal data.}
+\resumeItem{Analyzed resulting heatmaps to ascertain the performance of wireless access points in various positions.}
+\resumeItemListEnd
+
+% \resumeSubheading
+% {Viptela}{San Jose, CA}
+% {Software Engineering Intern}{May 2016 -- Aug 2016}
+% \resumeItemListStart
+% \resumeItem{Implemented an end-to-end test server management app complete with smart scheduling of tests, notifications, and server statistics.}
+% \resumeItem{Allowed testers to become at least 30\% more efficient in both scheduling tests and debugging failed tests.}
+% \resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+
+%-----------PROJECTS-----------
+\section{Projects}
+\resumeSubHeadingListStart
+
+% \resumeProjectHeading
+% {\textbf{Pawse} $|$ \emph{Python, Shell}}{}
+% \resumeItemListStart
+% \resumeItem{Scripted a utility to "pawse" your computer if it detects a pet's paws on your keyboard.}
+% \resumeItem{Built an easily customizable heuristics engine to power the paw detection, complete with keyboard layout and key-distance analytics.}
+% \resumeItemListEnd
+
+\resumeProjectHeading
+{\textbf{Personal Website} $|$ \emph{React, Gatsby, GraphQL, JavaScript, Strapi}}{}
+\resumeItemListStart
+\resumeItem{Fashioned my own website with pages for my portfolio, blog, and resume.}
+\resumeItem{Implemented Strapi on my custom website as a Content Management System (CMS) to enable fast updating and reduce maintenance.}
+\resumeItemListEnd
+
+\resumeProjectHeading
+{\textbf{Fabel} $|$ \emph{TensorFlow, Python, React, Electron}}{}
+\resumeItemListStart
+\resumeItem{Applied Google's BERT neural network to create document embeddings for newly downloaded files.}
+\resumeItem{Used cosine similarity on the embeddings to label documents based on the user’s previous labels.}
+\resumeItemListEnd
+
+% \resumeProjectHeading
+% {\textbf{MediaQ} $|$ \emph{React, Redux, JS/TS, Docker}}{}
+% \resumeItemListStart
+% \resumeItem{Created a website that allows you to make a collaborative queue of media and share it easily without accounts.}
+% \resumeItem{Built to accept media from all different sources.}
+% \resumeItemListEnd
+
+\resumeProjectHeading
+{\textbf{Dimensional Beats} $|$ \emph{C\#, Monogame}}{}
+\resumeItemListStart
+\resumeItem{Led a team of peers to create a game based on music.}
+\resumeItem{Analyzed music samples to find beats and synchronized them to specific in-game events based on beat frequency and type.}
+\resumeItemListEnd
+
+% \resumeProjectHeading
+% {\textbf{MemVRy - Menlohacks 3rd Place} $|$ \emph{Unity, CAD, C\#}}{}
+% \resumeItemListStart
+% \resumeItem{Engineered a Virtual Reality application that utilizes Memory Palaces.}
+% \resumeItem{Tested the solution and found it sped up memorization by up to two times.}
+% \resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+
+%
+%-----------PROGRAMMING SKILLS-----------
+\section{Technical Skills}
+\begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+                    \textbf{Languages}{: Python, SQL (BigQuery), JavaScript, TypeScript, HTML/CSS} \\
+                    \textbf{Frameworks}{: React, Node.js, Flask, TensorFlow, PyTorch} \\
+                    \textbf{Developer Tools}{: Git, Docker, Google Cloud Platform (GCP), Kubernetes} \\
+              }}
+\end{itemize}
+
+
+%-------------------------------------------
+\end{document}
+

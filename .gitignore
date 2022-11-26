@@ -1,0 +1,6 @@
+indent.log
+.idea
+
+# Ignore out except for the output pdf.
+out/*
+!out/resume.pdf
