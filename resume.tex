@@ -30,7 +30,7 @@
 % \usepackage[default]{sourcesanspro}
 
 % serif
-% \usepackage{CormorantGaramond}
+\usepackage{CormorantGaramond}
 % \usepackage{charter}
 
 
@@ -137,20 +137,20 @@
 
 \resumeSubheading
 {Fathom Health}{Remote/NYC}
-{Software Engineering Team Lead}{Jan. 2020 -- Present}
+{Software Engineering Team Lead}{Jan. 2022 -- Present}
 
 \resumeItemListStart
-\resumeItem{Designed and created complex ETL (extract, load, and transform) and reverse-ETL pipelines with hospitals and HIPAA data.}
+\resumeItem{Designed and created complex ETL (extract, load, and transform) and reverse-ETL pipelines transferring tens of thousands of HIPAA records a day.}
+% \resumeItem{Explored historical records and used domain knowledge to programatically infer new labels to help the model generalize to future guidelines or requirements changes.}
+\resumeItem{Integrated $\ge$10M historical healthcare records ($\sim$1TB of unstructured text) and aligned them to the individual guidelines of more than 100 individual hospitals for model finetuning.}
 \resumeItem{Led training and deployment of medical coding NLP models for multiple hospital conglomerations (\href{https://revcycleintelligence.com/features/medical-coding-is-the-next-stop-for-artificial-intelligence-in-healthcare}{\underline{ex. TEC Health}}).}
-\resumeItem{Explored historical records and used domain knowledge to programatically infer new labels to help the model generalize to future guidelines or requirements changes.}
-\resumeItem{Transformed $\ge$10M healthcare records, 1TB of unstructured data, and aligned them to the individual guidelines of more than 100 individual hospitals across the country.}
 \resumeItemListEnd
 
-% \resumeSubSubheading{Software Engineer}{}
-% \resumeItemListStart
-% \resumeItem{Implemented multiple post-model data transforms to tailor model predictions for specific customers and/or features.}
-% \resumeItem{Achieved a 10x model-train speedup by helping move model training to TPUs from GPUs allowing Fathom to feasibly train larger models and gain accuracy.}
-% \resumeItemListEnd
+\resumeSubSubheading{Software Engineer}{Jan. 2020 - Jan. 2022}
+\resumeItemListStart
+\resumeItem{Implemented post-model data transforms to filter, clean, and combine model predictions.}
+\resumeItem{Achieved a 10x model-train speedup by helping move model training to TPUs from GPUs allowing Fathom to feasibly train larger models and gain accuracy.}
+\resumeItemListEnd
 
 % -----------Multiple Positions Heading-----------
 %    \resumeSubSubheading
@@ -159,7 +159,6 @@
 %        \resumeItem{Apache Beam}
 %          {Apache Beam is a unified model for defining both batch and streaming data-parallel processing pipelines}
 %     \resumeItemListEnd
-%    \resumeSubHeadingListEnd
 %-------------------------------------------
 
 \resumeSubheading
@@ -173,7 +172,7 @@
 
 \resumeSubheading
 {Viptela}{San Jose, CA}
-{Software Engineering Intern}{Jun. 2018 -- Aug 2018}
+{Software Engineering Intern}{Jun. 2018 -- Aug. 2018}
 \resumeItemListStart
 \resumeItem{Predicted complex cross-platform network topologies by evaluating and applying multiple ML models. (random forest classification, logistic regression, and SVMs)}
 \resumeItem{Managed and built an application that deployed the predicted network onto AWS and hypervisor platforms (ESXi and KVM).}
@@ -181,7 +180,7 @@
 
 \resumeSubheading
 {Cisco Systems}{San Jose, CA}
-{Software Engineering Intern}{Jun. 2017 -- Aug 2017}
+{Software Engineering Intern}{Jun. 2017 -- Aug. 2017}
 \resumeItemListStart
 \resumeItem{Created queryable multi-variable network heatmaps with subsecond performance over 300 million values of real-time temporal data.}
 \resumeItem{Analyzed resulting heatmaps to ascertain the performance of wireless access points in various positions.}
@@ -189,7 +188,7 @@
 
 % \resumeSubheading
 % {Viptela}{San Jose, CA}
-% {Software Engineering Intern}{May 2016 -- Aug 2016}
+% {Software Engineering Intern}{May 2016 -- Aug. 2016}
 % \resumeItemListStart
 % \resumeItem{Implemented an end-to-end test server management app complete with smart scheduling of tests, notifications, and server statistics.}
 % \resumeItem{Allowed testers to become at least 30\% more efficient in both scheduling tests and debugging failed tests.}
@@ -253,7 +252,7 @@
 \begin{itemize}[leftmargin=0.15in, label={}]
     \small{\item{
                     \textbf{Languages}{: Python, SQL (BigQuery), JavaScript, TypeScript, HTML/CSS} \\
-                    \textbf{Frameworks}{: React, Node.js, Flask, TensorFlow, PyTorch} \\
+                    \textbf{Frameworks}{: Airflow, DBT, Spark, Beam, React, Node.js, Flask, TensorFlow} \\
                     \textbf{Developer Tools}{: Git, Docker, Google Cloud Platform (GCP), Kubernetes} \\
               }}
 \end{itemize}
