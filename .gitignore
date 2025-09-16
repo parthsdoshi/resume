@@ -1,5 +1,9 @@
 indent.log
 .idea
+.zed
+.env
+.claude
+CLAUDE.md
 
 # Ignore out except for the output pdf.
 out/*
