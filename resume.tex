@@ -108,11 +108,6 @@
 \begin{document}
 
 %----------HEADING----------
-% \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
-%   \textbf{\href{http://sourabhbajaj.com/}{\Large Sourabh Bajaj}} & Email : \href{mailto:sourabh@sourabhbajaj.com}{sourabh@sourabhbajaj.com}\\
-%   \href{http://sourabhbajaj.com/}{http://www.sourabhbajaj.com} & Mobile : +1-123-456-7890 \\
-% \end{tabular*}
-
 \begin{center}
     \textbf{\Huge Parth Doshi} \break
     \href{mailto:contact@parthdoshi.com}{\faIcon[regular]{paper-plane} \underline{contact@parthdoshi.com}} $|$
@@ -126,8 +121,8 @@
 \section{Education}
 \resumeSubHeadingListStart
 \resumeSubheading
-{Purdue}{West Lafayette, IN}
 {B.S. Computer Science: Machine Intelligence, B.S. Mathematical Statistics}{Aug. 2016 -- Dec 2019}
+{Purdue University}{West Lafayette, IN}
 \resumeSubHeadingListEnd
 
 
@@ -140,59 +135,35 @@
 {Software Engineering Team Lead}{Jan. 2022 -- Present}
 
 \resumeItemListStart
-\resumeItem{Designed and created complex ETL (extract, load, and transform) and reverse-ETL pipelines transferring tens of thousands of HIPAA records a day.}
-% \resumeItem{Explored historical records and used domain knowledge to programatically infer new labels to help the model generalize to future guidelines or requirements changes.}
-\resumeItem{Integrated $\ge$10M historical healthcare records ($\sim$1TB of unstructured text) and aligned them to the individual guidelines of more than 100 individual hospitals for model finetuning.}
-\resumeItem{Led training and deployment of medical coding NLP models for multiple hospital conglomerations (\href{https://revcycleintelligence.com/features/medical-coding-is-the-next-stop-for-artificial-intelligence-in-healthcare}{\underline{ex. TEC Health}}).}
+\resumeItem{Designed and operated production systems processing 250,000+ medical charts daily with burst capacity to 2M charts, maintaining 24-hour SLA requirements in HIPAA-compliant healthcare environments.}
+\resumeItem{Led technical vision for 10-15 engineers developing generative AI product that reduced client onboarding from months to weeks, while mentoring junior developers on system design and ML implementation best practices.}
+\resumeItem{Architected fault-tolerant data transformation system replacing client-specific PySpark parsers with unified DBT + Apache Beam pipeline, achieving 10x performance improvement and strict SLA compliance.}
+\resumeItem{Designed production LLM infrastructure with multi-provider failover (Gemini, Claude, GPT-4o), intelligent caching, and RAG implementation that maintains customer SLA compliance.}
 \resumeItemListEnd
 
 \resumeSubSubheading{Software Engineer}{Jan. 2020 - Jan. 2022}
 \resumeItemListStart
-\resumeItem{Implemented post-model data transforms to filter, clean, and combine model predictions.}
-\resumeItem{Achieved a 10x model-train speedup by helping move model training to TPUs from GPUs allowing Fathom to feasibly train larger models and gain accuracy.}
+\resumeItem{Achieved 10x model training speedup by migrating from GPUs to TPUs, enabling larger model architectures and improved accuracy for medical coding tasks.}
+\resumeItem{Implemented post-model data transforms to filter, clean, and combine predictions, improving automation rates and reducing manual review requirements.}
 \resumeItemListEnd
-
-% -----------Multiple Positions Heading-----------
-%    \resumeSubSubheading
-%     {Software Engineer I}{Oct 2014 - Sep 2016}
-%     \resumeItemListStart
-%        \resumeItem{Apache Beam}
-%          {Apache Beam is a unified model for defining both batch and streaming data-parallel processing pipelines}
-%     \resumeItemListEnd
-%-------------------------------------------
 
 \resumeSubheading
 {Microsoft}{Redmond, WA}
 {Software Engineering Intern}{May 2019 -- Aug. 2019}
 
 \resumeItemListStart
-\resumeItem{Automated provisioning and deprovisioning of roles to provide just-in-time (JIT) access of production Azure resources based on an inputted on-call schedule.}
-\resumeItem{Reduced each team's surface of attack by as much as 70\% by restricting the roles based on the duties required for each on-call role.}
+\resumeItem{Automated provisioning and deprovisioning of roles to provide just-in-time (JIT) access of production Azure resources using Azure REST API and C\#.}
+\resumeItem{Reduced each team's surface of attack by as much as 70\% by restricting permissions based on the duties required for each on-call position.}
 \resumeItemListEnd
 
 \resumeSubheading
 {Viptela}{San Jose, CA}
 {Software Engineering Intern}{Jun. 2018 -- Aug. 2018}
 \resumeItemListStart
-\resumeItem{Predicted complex cross-platform network topologies by evaluating and applying multiple ML models. (random forest classification, logistic regression, and SVMs)}
-\resumeItem{Managed and built an application that deployed the predicted network onto AWS and hypervisor platforms (ESXi and KVM).}
+\resumeItem{Predicted cross-platform network topologies using multiple ML models (random forest, logistic regression, SVMs) with hyperparameter optimization.}
+\resumeItem{Built automated deployment system for predicted networks on AWS and hypervisor platforms (ESXi, KVM) with infrastructure as code.}
+\resumeItem{Co-invented patented network topology prediction algorithm (\href{https://patents.google.com/patent/US11228500B1}{\underline{US Patent 11,228,500}}), demonstrating novel approach to automated network configuration.}
 \resumeItemListEnd
-
-\resumeSubheading
-{Cisco Systems}{San Jose, CA}
-{Software Engineering Intern}{Jun. 2017 -- Aug. 2017}
-\resumeItemListStart
-\resumeItem{Created queryable multi-variable network heatmaps with subsecond performance over 300 million values of real-time temporal data.}
-\resumeItem{Analyzed resulting heatmaps to ascertain the performance of wireless access points in various positions.}
-\resumeItemListEnd
-
-% \resumeSubheading
-% {Viptela}{San Jose, CA}
-% {Software Engineering Intern}{May 2016 -- Aug. 2016}
-% \resumeItemListStart
-% \resumeItem{Implemented an end-to-end test server management app complete with smart scheduling of tests, notifications, and server statistics.}
-% \resumeItem{Allowed testers to become at least 30\% more efficient in both scheduling tests and debugging failed tests.}
-% \resumeItemListEnd
 
 \resumeSubHeadingListEnd
 
@@ -201,26 +172,21 @@
 \section{Projects}
 \resumeSubHeadingListStart
 
-% \resumeProjectHeading
-% {\textbf{Pawse} $|$ \emph{Python, Shell}}{}
-% \resumeItemListStart
-% \resumeItem{Scripted a utility to "pawse" your computer if it detects a pet's paws on your keyboard.}
-% \resumeItem{Built an easily customizable heuristics engine to power the paw detection, complete with keyboard layout and key-distance analytics.}
-% \resumeItemListEnd
-
 \resumeProjectHeading
-{\textbf{Personal Website} $|$ \emph{React, Gatsby, GraphQL, JavaScript, Strapi}}{}
+{\textbf{VolleyAI} $|$ \emph{Python, Astro, Svelte, YOLO, OpenCV}}{}
 \resumeItemListStart
-\resumeItem{Fashioned my own website with pages for my portfolio, blog, and resume.}
-\resumeItem{Implemented Strapi on my custom website as a Content Management System (CMS) to enable fast updating and reduce maintenance.}
+\resumeItem{Developed a \href{https://volleytube.parthdoshi.com}{\underline{web application}} for AI-powered volleyball game analysis using YOLO computer vision to detect players and ball tracking.}
+\resumeItem{Implemented custom heuristics for rally detection and created a YouTube-style video player with intelligent timeline highlighting for game footage review.}
+\resumeItem{Built full-stack application with Python backend (LiteStar), Astro frontend, and deployed on GCP with containerized ML inference.}
 \resumeItemListEnd
 
 \resumeProjectHeading
-{\textbf{Fabel} $|$ \emph{TensorFlow, Python, React, Electron}}{}
+{\textbf{Personal Website} $|$ \emph{Astro, Svelte, TypeScript, TailwindCSS}}{}
 \resumeItemListStart
-\resumeItem{Applied Google's BERT neural network to create document embeddings for newly downloaded files.}
-\resumeItem{Used cosine similarity on the embeddings to label documents based on the user’s previous labels.}
+\resumeItem{Rebuilt personal website from React/Gatsby to modern Astro + Svelte stack for improved performance and developer experience.}
+\resumeItem{Implemented responsive design with TailwindCSS and integrated MDX for blog content with automatic sitemap generation.}
 \resumeItemListEnd
+
 
 % \resumeProjectHeading
 % {\textbf{MediaQ} $|$ \emph{React, Redux, JS/TS, Docker}}{}
@@ -229,12 +195,6 @@
 % \resumeItem{Built to accept media from all different sources.}
 % \resumeItemListEnd
 
-\resumeProjectHeading
-{\textbf{Dimensional Beats} $|$ \emph{C\#, Monogame}}{}
-\resumeItemListStart
-\resumeItem{Led a team of peers to create a game based on music.}
-\resumeItem{Analyzed music samples to find beats and synchronized them to specific in-game events based on beat frequency and type.}
-\resumeItemListEnd
 
 % \resumeProjectHeading
 % {\textbf{MemVRy - Menlohacks 3rd Place} $|$ \emph{Unity, CAD, C\#}}{}
@@ -251,13 +211,13 @@
 \section{Technical Skills}
 \begin{itemize}[leftmargin=0.15in, label={}]
     \small{\item{
-                    \textbf{Languages}{: Python, SQL (BigQuery), JavaScript, TypeScript, HTML/CSS} \\
-                    \textbf{Frameworks}{: Airflow, DBT, Spark, Beam, React, Node.js, Flask, TensorFlow} \\
-                    \textbf{Developer Tools}{: Git, Docker, Google Cloud Platform (GCP), Kubernetes} \\
+                    \textbf{Languages}{: Python, SQL (BigQuery), Bash, TypeScript, HTML, CSS} \\
+                    \textbf{Frameworks}{: Apache Spark/Beam, DBT, Airflow, React, Node.js, Astro/Svelte} \\
+                    \textbf{ML/AI}{: LLMs (Gemini, Claude, GPT-4o), RAG, YOLO, Computer Vision, TensorFlow} \\
+                    \textbf{Infrastructure}{: GCP, Azure, Kubernetes, Terraform, Docker, Monitoring/Logging, Git/jj} \\
               }}
 \end{itemize}
 
 
 %-------------------------------------------
 \end{document}
-
