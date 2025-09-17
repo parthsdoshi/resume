@@ -4,6 +4,7 @@ indent.log
 .env
 .claude
 CLAUDE.md
+.DS_Store
 
 # Ignore out except for the output pdf.
 out/*

@@ -132,19 +132,24 @@
 
 \resumeSubheading
 {Fathom Health}{Remote/NYC}
-{Software Engineering Team Lead}{Jan. 2022 -- Present}
+{Lead Software Engineer}{Jan. 2022 -- Present}
+% https://www.fathomhealth.com/insights/growing-with-fathom-parth-doshi
 
 \resumeItemListStart
-\resumeItem{Designed and operated production systems processing 250,000+ medical charts daily with burst capacity to 2M charts, maintaining 24-hour SLA requirements in HIPAA-compliant healthcare environments.}
-\resumeItem{Led technical vision for 10-15 engineers developing generative AI product that reduced client onboarding from months to weeks, while mentoring junior developers on system design and ML implementation best practices.}
-\resumeItem{Architected fault-tolerant data transformation system replacing client-specific PySpark parsers with unified DBT + Apache Beam pipeline, achieving 10x performance improvement and strict SLA compliance.}
-\resumeItem{Designed production LLM infrastructure with multi-provider failover (Gemini, Claude, GPT-4o), intelligent caching, and RAG implementation that maintains customer SLA compliance.}
+\resumeItem{Spearheaded implementation of Fathom's Risk Adjustment coding product to increase ARR by \$15M+, a 2.5x increase, which required scaling Fathom's model from 10,000 medical charts daily to 250,000 charts with burst capacity of up to 2M charts.}
+\resumeItem{Led team of 15 engineers to develop a generative AI solution for the Risk Adjustment product which reduced client onboarding time from months to weeks by removing the need for terabytes of training data and thus reducing technical complexity.}
+\resumeItem{Architected data transformation system replacing bespoke client-specific integrations with a single reusable pipeline, reducing engineering time per implementation from 2 months to 2 weeks.}
+\resumeItem{Designed and implemented a common integration for Athena EHR clients using FHIR, further decreasing onboarding time to days instead of weeks, leading to Fathom delivering an initial POC 50\% faster for clients.}
+\resumeItem{Collaborated directly with stakeholders of health systems, altogether containing over 1,000 medical facilities, to understand their specific guidelines, and design novel technical solutions.}
+\resumeItem{Advocated for and moved the company to using Terraform for infrastructure as code, reducing time by 200\% to provision new PHI-safe environments with sane default networking, kubernetes clusters, geographic restrictions, and just-in-time permissioning.}
+% \resumeItem{Designed and operated production systems processing 250,000+ medical charts daily with burst capacity to 2M charts, maintaining 24-hour SLA requirements in HIPAA-compliant healthcare environments.}
 \resumeItemListEnd
 
 \resumeSubSubheading{Software Engineer}{Jan. 2020 - Jan. 2022}
 \resumeItemListStart
-\resumeItem{Achieved 10x model training speedup by migrating from GPUs to TPUs, enabling larger model architectures and improved accuracy for medical coding tasks.}
-\resumeItem{Implemented post-model data transforms to filter, clean, and combine predictions, improving automation rates and reducing manual review requirements.}
+\resumeItem{Achieved 10x model training speedup by migrating from GPUs to TPUs, enabling larger model architectures that allowed Fathom to expand beyond Radiology and into the Emergency Department and Primary Care specialties increasing ARR by 3x.}
+\resumeItem{Mapped diagnoses to procedures by parsing the entire diagnosis (ICD10) index and linking procedures/diagnoses based on the body parts they affect plus a combination of 10 additional heuristics which increased diagnosis coding accuracy by 30\%.}
+% \resumeItem{Implemented post-model data transforms to filter, clean, and combine predictions, improving automation rates and reducing manual review requirements.}
 \resumeItemListEnd
 
 \resumeSubheading
@@ -152,39 +157,34 @@
 {Software Engineering Intern}{May 2019 -- Aug. 2019}
 
 \resumeItemListStart
-\resumeItem{Automated provisioning and deprovisioning of roles to provide just-in-time (JIT) access of production Azure resources using Azure REST API and C\#.}
-\resumeItem{Reduced each team's surface of attack by as much as 70\% by restricting permissions based on the duties required for each on-call position.}
+\resumeItem{Automated provisioning and deprovisioning of roles to provide just-in-time access of production Azure resources for on-call engineers, which reduced each team's surface of attack by as much as 70\%.}
 \resumeItemListEnd
 
 \resumeSubheading
 {Viptela}{San Jose, CA}
 {Software Engineering Intern}{Jun. 2018 -- Aug. 2018}
 \resumeItemListStart
-\resumeItem{Predicted cross-platform network topologies using multiple ML models (random forest, logistic regression, SVMs) with hyperparameter optimization.}
-\resumeItem{Built automated deployment system for predicted networks on AWS and hypervisor platforms (ESXi, KVM) with infrastructure as code.}
-\resumeItem{Co-invented patented network topology prediction algorithm (\href{https://patents.google.com/patent/US11228500B1}{\underline{US Patent 11,228,500}}), demonstrating novel approach to automated network configuration.}
+\resumeItem{Co-invented network topology prediction algorithm (\href{https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/11228500}{\underline{US Patent 11,228,500}}), allowing Viptela to generate optimal network topologies for customers without requiring a network architect.}
 \resumeItemListEnd
 
 \resumeSubHeadingListEnd
 
 
-%-----------PROJECTS-----------
-\section{Projects}
+%-----------OTHER EXPERIENCE-----------
+\section{Other Experience}
 \resumeSubHeadingListStart
 
 \resumeProjectHeading
-{\textbf{VolleyAI} $|$ \emph{Python, Astro, Svelte, YOLO, OpenCV}}{}
+{\textbf{VolleyAI} $|$ \emph{Python, Astro, Svelte, YOLO, OpenCV, GCP (containerized ML inference)}}{2025}
 \resumeItemListStart
-\resumeItem{Developed a \href{https://volleytube.parthdoshi.com}{\underline{web application}} for AI-powered volleyball game analysis using YOLO computer vision to detect players and ball tracking.}
-\resumeItem{Implemented custom heuristics for rally detection and created a YouTube-style video player with intelligent timeline highlighting for game footage review.}
-\resumeItem{Built full-stack application with Python backend (LiteStar), Astro frontend, and deployed on GCP with containerized ML inference.}
+\resumeItem{Developed a \href{https://volleytube.parthdoshi.com}{\underline{web app}} for AI-powered volleyball game analysis using computer vision (CNN) focusing on allowing players or coaches to watch and export individual rallies using a YouTube-style video player.}
+% \resumeItem{Built full-stack application with Python backend (LiteStar), Astro frontend, and deployed on GCP with containerized ML inference.}
 \resumeItemListEnd
 
 \resumeProjectHeading
-{\textbf{Personal Website} $|$ \emph{Astro, Svelte, TypeScript, TailwindCSS}}{}
+{\textbf{TEALS Volunteer Instructor} $|$ \emph{Microsoft TEALS Program}}{2021 -- 2024}
 \resumeItemListStart
-\resumeItem{Rebuilt personal website from React/Gatsby to modern Astro + Svelte stack for improved performance and developer experience.}
-\resumeItem{Implemented responsive design with TailwindCSS and integrated MDX for blog content with automatic sitemap generation.}
+\resumeItem{Taught AP Computer Science Principles weekly to high school students in person for 3 years, developing curriculum and leading classroom instruction alongside professional teachers.}
 \resumeItemListEnd
 
 
